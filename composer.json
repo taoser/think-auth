@@ -1,6 +1,6 @@
 {
     "name": "taoser/think-auth",
-    "description": "ThinkPHP6的Auth权限扩展",
+    "description": "The Auth package forThinkphp6,ThinkPHP6的Auth权限扩展",
     "keywords": ["think-auth", "thinkphp6"],
 	"homepage": "https://github.com/taoser/think-auth",
     "license": "Apache-2.0",

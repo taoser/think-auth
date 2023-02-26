@@ -162,7 +162,8 @@ class Auth
         }
         // 获取用户需要验证的所有有效规则列表
         $authList = $this->getAuthList($uid, $type);
-        if (is_string($name)) {
+
+        if(!is_array($name)) {
             $name = strtolower($name);
             if (strpos($name, ',') !== false) {
                 $name = explode(',', $name);
@@ -170,6 +171,7 @@ class Auth
                 $name = [$name];
             }
         }
+
         $list = []; //保存验证通过的规则名
         if ('url' == $mode) {
             $REQUEST = unserialize(strtolower(serialize($this->request->param())));
